@@ -3,7 +3,7 @@ package models;
 public class Palavra {
     private final String texto;
     private final ListaEncadeada ocorrencias;
-    private Palavra proximo; // Adicionamos um ponteiro para formar a lista encadeada na TabelaHash
+    private Palavra proximo;
 
     public Palavra(String texto) {
         this.texto = texto;

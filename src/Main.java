@@ -26,7 +26,7 @@ public class Main {
             int numLinha = 1;
 
             while ((linha = reader.readLine()) != null) {
-                String[] palavras = linha.toLowerCase().replaceAll("[^a-zA-Z ]", "").split("\\s+");
+                String[] palavras = linha.toLowerCase().replaceAll("[^a-zA-Z0-9- ]", "").split("\\s+");
                 for (String palavraTexto : palavras) {
                     if (!palavraTexto.isEmpty()) {
                         tabela.adicionarOcorrencia(palavraTexto, numLinha);
